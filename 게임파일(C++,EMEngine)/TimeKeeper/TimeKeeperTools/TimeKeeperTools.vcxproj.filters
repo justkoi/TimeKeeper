@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{e42c8f12-e1ac-4fbc-93ff-2d291426bcb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User">
+      <UniqueIdentifier>{53ebc44d-129f-4a52-a546-182fc11397bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{672e4412-7040-44ab-be05-bdcf6355b8b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Logo.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CSoundMNG.cpp" />
+    <ClCompile Include="MapTools.cpp">
+      <Filter>Tools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInclude.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="UserDefine.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="UserExtern.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="Logo.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CSoundMNG.h" />
+    <ClInclude Include="MapTools.h">
+      <Filter>Tools</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

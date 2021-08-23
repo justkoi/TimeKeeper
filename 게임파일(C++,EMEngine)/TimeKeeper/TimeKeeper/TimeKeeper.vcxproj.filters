@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{e42c8f12-e1ac-4fbc-93ff-2d291426bcb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="User">
+      <UniqueIdentifier>{53ebc44d-129f-4a52-a546-182fc11397bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unit">
+      <UniqueIdentifier>{ccc3871a-306c-4b37-9117-00e11b72474d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map">
+      <UniqueIdentifier>{ef5dab7d-16fc-49ab-86c9-5ab7483f847b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ChatWindow">
+      <UniqueIdentifier>{308ff613-a6c1-4f45-a908-50f62bf8a783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua">
+      <UniqueIdentifier>{ce7edb25-2dcb-4d4a-9485-76e9a63e831c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PauseWindow">
+      <UniqueIdentifier>{c99d0ddd-7cfb-4a9d-af44-60fbb1086d67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Item">
+      <UniqueIdentifier>{cd03f712-a05a-49c7-ad71-01455cc9bf9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EMStyleButton">
+      <UniqueIdentifier>{538c68cc-98b1-4776-9127-b46bb64fbcd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EMStaticButton">
+      <UniqueIdentifier>{2a5b8f77-1088-4742-b17f-a29fa3b3cabb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{004e32e9-e3c3-4737-8664-1d63d82fcde0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Stage.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="Hero.cpp">
+      <Filter>Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="PartMap.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="BlokingBlock.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="MapManager.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="BlindManager.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Portal.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC.cpp">
+      <Filter>Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatWindow.cpp">
+      <Filter>ChatWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="EMTextDisplay.cpp">
+      <Filter>ChatWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="CSoundMNG.cpp" />
+    <ClCompile Include="LuaRoot.cpp">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Mng.cpp">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseWindow.cpp">
+      <Filter>PauseWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Inventory.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="EMStyleButton\NoneState.cpp">
+      <Filter>EMStyleButton</Filter>
+    </ClCompile>
+    <ClCompile Include="EMStyleButton\OverState.cpp">
+      <Filter>EMStyleButton</Filter>
+    </ClCompile>
+    <ClCompile Include="EMStyleButton\ClickedState.cpp">
+      <Filter>EMStyleButton</Filter>
+    </ClCompile>
+    <ClCompile Include="EMStyleButton\EMStyleButton.cpp">
+      <Filter>EMStyleButton</Filter>
+    </ClCompile>
+    <ClCompile Include="EMStaticButton.cpp">
+      <Filter>EMStaticButton</Filter>
+    </ClCompile>
+    <ClCompile Include="EMTempest.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="EMEffectManager.cpp">
+      <Filter>Library</Filter>
+    </ClCompile>
+    <ClCompile Include="Option.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Credit.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Logo.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInclude.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="UserDefine.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="UserExtern.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="Hero.h">
+      <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="PartMap.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="BlokingBlock.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="MapManager.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="BlindManager.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Portal.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC.h">
+      <Filter>Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatWindow.h">
+      <Filter>ChatWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="EMTextDisplay.h">
+      <Filter>ChatWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="CSoundMNG.h" />
+    <ClInclude Include="Mng.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaRoot.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseWindow.h">
+      <Filter>PauseWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Inventory.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="EMStyleButton\EMStyleButton.h">
+      <Filter>EMStyleButton</Filter>
+    </ClInclude>
+    <ClInclude Include="EMStyleButton\NoneState.h">
+      <Filter>EMStyleButton</Filter>
+    </ClInclude>
+    <ClInclude Include="EMStyleButton\OverState.h">
+      <Filter>EMStyleButton</Filter>
+    </ClInclude>
+    <ClInclude Include="EMStyleButton\ButtonState.h">
+      <Filter>EMStyleButton</Filter>
+    </ClInclude>
+    <ClInclude Include="EMStyleButton\ClickedState.h">
+      <Filter>EMStyleButton</Filter>
+    </ClInclude>
+    <ClInclude Include="EMStaticButton.h">
+      <Filter>EMStaticButton</Filter>
+    </ClInclude>
+    <ClInclude Include="EMTempest.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="EMEffectManager.h">
+      <Filter>Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Credit.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Option.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Logo.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,54 @@
+﻿  ..\libary\dll\AntTweakBar.dll
+  ..\libary\dll\DevIL.dll
+  ..\libary\dll\fmodex.dll
+  ..\libary\dll\fmodexL.dll
+  ..\libary\dll\fmodexp.dll
+  ..\libary\dll\glfw.dll
+  ..\libary\dll\ILU.dll
+  ..\libary\dll\ILUT.dll
+  8개 파일이 복사되었습니다.
+BlindManager.obj : warning LNK4075: '/EDITANDCONTINUE'이(가) '/SAFESEH' 사양으로 인해 무시됩니다.
+EMEngine3_d.lib(EMPlane.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(Scene.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMInput.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMColor.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMText.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMString.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMSound.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMPhysicRoot.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(SceneWork.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMMath.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMCamera.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMParticle.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMAnimation.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMWorld.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMVector.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMMatrix3x3.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMTexture.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMSprite.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMASE.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMInterface.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMFrustum.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMMatrix4x4.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMBBox.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMRect.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMAnimator.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMMFCCamera.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMSpriteList.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMStatic.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMListBox.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMEditBox.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMCheckBox.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMRadioButton.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMButton.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMAnimatorList.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMIme.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+EMEngine3_d.lib(EMImm.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+OGL_Core_d.lib(EMOglCore.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+OGL_Core_d.lib(EMOglInfo.obj) : error LNK2038: '_MSC_VER'에 대해 불일치가 검색되었습니다. '1600' 값이 '1700'(BlindManager.obj에 위치) 값과 일치하지 않습니다.
+LINK : warning LNK4098: 'MSVCRT' defaultlib가 다른 라이브러리와 충돌합니다. /NODEFAULTLIB:library를 사용하십시오.
+LINK : warning LNK4098: 'LIBCMT' defaultlib가 다른 라이브러리와 충돌합니다. /NODEFAULTLIB:library를 사용하십시오.
+EMEngine3_d.lib(EMString.obj) : error LNK2019: "__declspec(dllimport) public: void __thiscall std::locale::facet::_Incref(void)" (__imp_?_Incref@facet@locale@std@@QAEXXZ) 외부 기호(참조 위치: "class std::codecvt<char,char,int> const & __cdecl std::use_facet<class std::codecvt<char,char,int> >(class std::locale const &)" (??$use_facet@V?$codecvt@DDH@std@@@std@@YAABV?$codecvt@DDH@0@ABVlocale@0@@Z) 함수)에서 확인하지 못했습니다.
+EMEngine3_d.lib(EMString.obj) : error LNK2019: "private: static void __cdecl std::locale::facet::_Facet_Register(class std::locale::facet *)" (?_Facet_Register@facet@locale@std@@CAXPAV123@@Z) 외부 기호(참조 위치: "public: void __thiscall std::locale::facet::_Register(void)" (?_Register@facet@locale@std@@QAEXXZ) 함수)에서 확인하지 못했습니다.
+EMEngine3_d.lib(EMString.obj) : error LNK2019: "__declspec(dllimport) public: class std::locale::facet * __thiscall std::locale::facet::_Decref(void)" (__imp_?_Decref@facet@locale@std@@QAEPAV123@XZ) 외부 기호(참조 위치: "public: __thiscall std::locale::~locale(void)" (??1locale@std@@QAE@XZ) 함수)에서 확인하지 못했습니다.
+Debug\TimeKeeper.exe : fatal error LNK1120: 3개의 확인할 수 없는 외부 참조입니다.

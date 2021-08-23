@@ -1,0 +1,11 @@
+﻿  ..\libary\dll\AntTweakBar.dll
+  ..\libary\dll\DevIL.dll
+  ..\libary\dll\fmodex.dll
+  ..\libary\dll\fmodexL.dll
+  ..\libary\dll\fmodexp.dll
+  ..\libary\dll\glfw.dll
+  ..\libary\dll\ILU.dll
+  ..\libary\dll\ILUT.dll
+  8개 파일이 복사되었습니다.
+  CSoundMNG.cpp
+cl : 명령줄 error D8027: 'C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\c1xx.dll'을(를) 실행할 수 없습니다.
