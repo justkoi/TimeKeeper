@@ -1,15 +1,19 @@
 # TimeKeeper
+| ![a](./img/1.PNG) | ![a](./img/2.PNG) |
+| ---------------- | ---------------- |
+| ![a](./img/3.PNG) | ![a](./img/4.PNG) |
+
 ### 한국게임과학고등학교 2학년 팀프로젝트
 
 프로젝트 소개 : TimeKeeper는 과거로 여행을 떠나 일어나는 사건을 조사해나가는 추리게임입니다.
 
 사용 기술 : C++, EM엔진(한국게임과학고등학교 교내엔진)
 
-담담 역할 : 팀장, 프로그래밍 (UI메뉴 제외 게임 작업)
+담당 역할 : 팀장, 프로그래밍 (UI메뉴 제외 게임 작업)
 
 개발기간 : 2012년 6월~ 2012년 11월
 
-핵심 기술 / 알고리즘 : 한글 텍스트를 순차적으로 재생시켜주는 기능. 타일 맵 이동 및 NPC 상호작용. NPC채팅 시스템.
+핵심 기술 / 알고리즘 : 한글 텍스트를 순차적으로 재생시켜주는 기능. 파일입출력을 통한 타일 맵 시스템 구현. 여러 맵 사이의 전환. 이동 및 NPC 상호작용. NPC채팅 시스템.
 
 플레이영상 : https://youtu.be/WKIJbArL8aM
 
@@ -690,7 +694,7 @@ void CEMTextDisplay::Update(float dt)
 }
 ```
 
-#### CPartMap : 파일 입출력을 통해 타일맵을 읽어들이고 블록(충돌가능한 장애물)을 생성합니다.
+#### CPartMap : 파일 입출력을 통해 타일맵을 읽어들이고 블록(충돌가능한 장애물)을 생성합니다. 파트맵은 그 자체로 하나의 맵으로 간주됩니다. (파트맵 내부 메서드에서 맵 시작 및 퇴장 존재.)
 
 https://github.com/justkoi/TimeKeeper/blob/main/%EA%B2%8C%EC%9E%84%ED%8C%8C%EC%9D%BC(C%2B%2B%2CEMEngine)/TimeKeeper/TimeKeeper/PartMap.cpp
 
@@ -1014,6 +1018,107 @@ int CPartMap::getMapHeight()
 int CPartMap::getIndex()
 {
 	return m_nIndex;
+}
+```
+
+#### MapManager : 맵이 넘어갈때 Partmap교체를 통해 맵을 전환합니다. 카메라 위치를 조정합니다.
+
+https://github.com/justkoi/TimeKeeper/blob/main/%EA%B2%8C%EC%9E%84%ED%8C%8C%EC%9D%BC(C%2B%2B%2CEMEngine)/TimeKeeper/TimeKeeper/MapManager.cpp
+
+```C++
+#include "stdafx.h"
+
+void CMapManager::Init(CRootScene* pThisScene, CHero* CTargetHero)
+{
+	m_bNowChange = false;
+	m_stNextHeroPos = stEMVec2(90.0f,90.0f);
+	m_BlindManager.Init(pThisScene);
+	m_CTargetHero = CTargetHero;
+	m_pThisScene = pThisScene;
+	ChangeMap(1,CTargetHero);
+}
+void CMapManager::Update(float dt)
+{
+	m_CNowMap->Update(dt);
+	m_BlindManager.Update(dt);
+
+	if(m_bNowChange == true)
+	{
+		if( m_BlindManager.m_bAction == true )
+		{
+			m_CNowMap->Exit();
+			delete m_CNowMap;
+			m_CNowMap = NULL;
+			m_CNowMap = CreateMap(m_CTargetHero);
+			m_BlindManager.StartBlind(1,E_BLINDSTATE_FADE_IN,1.0f,true);
+			m_bNowChange = false;
+			m_CTargetHero->m_bMapChangeAble = true;
+			m_CTargetHero->setPos(m_stNextHeroPos);
+
+			g_stCamPos_Stage.m_fX = m_CTargetHero->getPos().m_fX;
+			if(g_stCamPos_Stage.m_fX <= D_SCREEN_WIDTH/2)
+				g_stCamPos_Stage.m_fX = D_SCREEN_WIDTH/2;
+			else if(g_stCamPos_Stage.m_fX >= (getCurMap()->getMapWidth() * D_TILE_WIDTH) - (D_SCREEN_WIDTH/2) - D_TILE_WIDTH)
+				g_stCamPos_Stage.m_fX = (getCurMap()->getMapWidth() * D_TILE_WIDTH) - (D_SCREEN_WIDTH/2) - D_TILE_WIDTH;
+
+			g_stCamPos_Stage.m_fY = m_CTargetHero->getPos().m_fY;
+			if(g_stCamPos_Stage.m_fY >= -(D_SCREEN_HEIGHT/2))
+				g_stCamPos_Stage.m_fY = -(D_SCREEN_HEIGHT/2);
+			else if(g_stCamPos_Stage.m_fY <= -(getCurMap()->getMapHeight() * D_TILE_HEIGHT) + (D_SCREEN_HEIGHT/2) + D_TILE_WIDTH)
+				g_stCamPos_Stage.m_fY = -(getCurMap()->getMapHeight() * D_TILE_HEIGHT) + (D_SCREEN_HEIGHT/2) + D_TILE_WIDTH;
+
+
+			g_stSmoothCamPos_Stage = g_stCamPos_Stage;
+		}
+	}
+	if(m_BlindManager.m_eState == E_BLINDSTATE_FADE_IN)
+	{
+		if( m_BlindManager.m_bAction == true )
+		{
+			m_CTargetHero->m_bMapChangeAble = true;
+			m_BlindManager.m_bAction = false;
+		}
+	}
+}
+void CMapManager::Exit()
+{
+	
+	m_CNowMap->Exit_End();
+	delete m_CNowMap;
+}
+CPartMap* CMapManager::getCurMap()
+{
+	return m_CNowMap;
+}
+CPartMap* CMapManager::CreateMap(CHero* CTargetHero)
+{
+	CPartMap* CNewMap = new CPartMap();
+	CNewMap->Init(m_pThisScene,m_nNowMap,CTargetHero);
+	return CNewMap;
+}
+void CMapManager::ChangeMap(int nMapIndex, CHero* CTargetHero)
+{
+	//if(m_bNowChange == false)
+	//{
+		if(m_CNowMap == NULL)
+		{
+			m_nNowMap = nMapIndex;
+			m_CNowMap = CreateMap(CTargetHero);
+			m_BlindManager.StartBlind(1,E_BLINDSTATE_FADE_IN,1.0f);
+			CTargetHero->m_bMapChangeAble = false;
+		}
+		else
+		{
+			//if(m_bNowChange == false)
+			//{
+				m_BlindManager.StartBlind(1,E_BLINDSTATE_FADE_OUT,1.0f);
+				m_bNowChange = true;
+				m_CTargetHero = CTargetHero;
+				m_nNowMap = nMapIndex;
+				CTargetHero->m_bMapChangeAble = false;
+			//}
+		}
+	//}
 }
 ```
 
